@@ -1,0 +1,590 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+} 
+
+/* cabeçalho */
+
+.navbar{
+    height: 170px;
+    background-color: rgb(56, 71, 95);
+}
+
+#navbarNav{
+    justify-content: right;
+    margin-right: 70px; 
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+    color: #fff !important; 
+}
+
+.navbar-brand{
+    margin-left: 100px;
+    color: #ed4848;
+    
+}
+
+.navbar-brand img{
+    width: 170px;
+}
+
+.navbar .nav-link:hover {
+    color: #ed4848 !important; 
+    text-decoration: underline;
+}
+
+.shadow-nav {
+    box-shadow: 0 50px 100px rgba(56, 71, 95, 0.9);
+    position: relative; /* Necessário para aplicar z-index */
+    z-index: 10; /* Valor maior para sobrepor o carrossel */
+}
+
+
+@media (max-width: 542px) {
+
+
+    .navbar{
+        height: 230px;
+    }
+
+    .nav-item {
+        margin-left: 50px;
+        
+        
+    }
+
+    .navbar-brand{
+        
+        margin-left: 50px;
+    }
+    
+}
+
+@media (max-width: 545px) {
+
+
+    .navbar{
+        height: 300px;
+    }
+
+   
+    
+}
+
+/* Fim Cabeçalho */
+
+/* Carrossel */
+
+.carousel-item {
+    min-height: 600px; /* Altura da viewport */
+    z-index: 1; /* Valor menor para ficar atrás da nav */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Cobrir a área do carrossel */
+    height: 600px; /* Altura da imagem */
+    width: 100%; /* Largura da imagem */
+    filter: brightness(40%);
+}
+
+/* Texto e botão Imagem Carrossel */
+
+.btn{
+    color: white;
+    background-color: #ed4848;
+    border-radius: 20px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover{
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0 8px 8px rgba(192, 55, 55, 0.7);
+}
+
+.carousel-caption h4 {
+    
+    color: #ed4848;
+}
+
+.carousel-caption {
+    bottom: 35%;
+}
+
+/* Fim Carrossel */
+
+/* Inicio Conteudo da pagina Inicio */
+
+#corpo{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.custom-content{
+    text-align: center;
+
+}
+
+.custom-content p, li {
+    font-weight: normal; /* Remove o negrito do parágrafo */
+}
+
+.custom-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.custom-list{
+
+    list-style: none;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+
+.custom-list li:before {
+    content: "done_all"; /* Nome do ícone Material Icons */
+    font-family: 'Material Icons';
+   position: absolute;
+    left: 0;
+    top: 0;
+    color: #ed4848;
+    font-size: 24px;
+    
+}
+
+
+@media (max-width: 767.98px) {
+    .custom-content {
+        text-align: center;
+    }
+
+    .custom-img {
+        margin-bottom: 20px;
+    }
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ed4848;
+}
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.section-paragraph {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal; /* Remove o negrito do parágrafo */
+
+}
+
+.icon-column {
+    text-align: center;
+    margin-bottom: 100px;
+    
+}
+.icon-column .material-icons {
+    font-size: 48px;
+    color: #ed4848; /* Cor do ícone */
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+/* Espaçamento entre os itens de rede social */
+.footer .list-unstyled.d-flex li {
+    margin-right: 15px;
+}
+
+/* Remover margem do último item */
+.footer .list-unstyled.d-flex li:last-child {
+    margin-right: 0;
+}
+
+.copy{
+    font-size: 12px;
+}
+
+.col-md-4{
+    font-size: 13px;
+    align-items: center;
+    text-align: center;
+}
+
+#pcf{
+    color: white;
+}
+
+footer{
+    background-color: rgb(56, 71, 95);
+
+}
+
+.list-unstyled{
+    align-items: center;
+    text-align: center;
+}
+
+.bi {
+    font-size: 32px; /* Tamanho do ícone */
+    
+}
+
+ .d-flex {
+    display: flex;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+  
+}
+
+
+/* Etilos das Pagina Quem Somos */
+
+
+.icon-section{
+
+    color: white;
+    background-color: rgb(56, 71, 95) ;
+    
+}
+
+#sectionsomos{
+
+    height: 270px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+#iconesomos{
+    
+    color: #ed4848;
+    margin-top: 30px;
+    font-size: 56px;
+  
+}
+
+#somos{
+    
+    margin-top: 15px;
+}
+
+.icon-box{
+
+    text-align: center;
+    
+}
+
+#mvv{
+    font-weight: normal; /* Remove o negrito do parágrafo */
+}
+
+.section-mvv{
+    margin-bottom: 100px ;
+}
+
+#iconmvv{
+    font-size: 48px;
+    color: #ed4848;
+}
+
+#btnsomos{
+    width: 150px;
+    
+}
+
+@media (max-width: 1045px) {
+#sectionsomos{
+    height: 350px;
+ 
+}  
+
+}
+
+@media (max-width: 348px) {
+    #sectionsomos{
+        height: 450px;
+    }
+    }
+
+/*  Fim Etilos das Pagina Quem Somos */
+
+/*  Etilos da Pagina empreendimentos */
+
+.topoemp h6{
+    text-align: center;
+    margin-top: 80px;
+    color: #ed4848;
+}
+
+.topoemp h3{
+    text-align: center;
+}
+
+.topoemp p{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: normal;
+}
+
+#iconeemp{
+
+    color: #ed4848;
+    font-size: 48px;
+ 
+}
+
+#sectioncard{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.empbnt{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    position: relative;
+    color: white; /* Cor do texto */
+  }
+
+.card-img-top {
+    object-fit: cover;
+  }
+
+.card-body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.257); /* Fundo preto transparente */
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    
+   
+  }
+
+  .card-content{
+    text-align: left;
+  }
+
+  
+/*  Etilos da Pagina Contato */
+
+
+#contato{
+
+    margin-bottom: 80px;
+    font-weight: normal; /* Remove o negrito do parágrafo */
+
+}
+
+form {
+    
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: rgb(237, 72, 72) ;
+    box-shadow: 0 0 5px rgb(237, 72, 72);
+    outline: none;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#fc{
+    margin-top: 60px;
+}
+
+#fc p{
+    font-weight: normal; /* Remove o negrito do parágrafo */
+
+}
+
+#nc{
+    margin-top: 60px;
+    
+}
+
+#nc p{
+
+    font-weight: normal;
+    
+}
+
+.localizacao{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    
+}
+
+.localizacao iframe{
+    margin-bottom: 80px;
+}
+
+@media (max-width: 770px) {
+    #nc{
+        text-align: center;
+    }
+    }
+
+/* Estilos do banner de cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background-color: rgb(56, 71, 95);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cookie-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cookie-banner p {
+    margin: 0;
+    padding-right: 10px;
+    flex: 1;
+    text-align: left;
+}
+
+.cookie-banner a {
+    color: #ecf0f1;
+    text-decoration: underline;
+}
+
+.cookie-banner a:hover {
+    color: #bdc3c7;
+}
+
+.cookie-banner .btn {
+    margin-left: 10px;
+}
+
+/* Página Cookies */
+
+.cookies{
+    margin-top: 60px;
+    padding: 40px;
+}
+
+.cookies p{
+    font-weight: normal; /* Remove o negrito do parágrafo */
+
+}
+
+.cookies a{
+    color: #ed4848;
+}
+
+/* Página Política Privacidade */
+
+.pprivacidade{
+    margin-top: 60px;
+    padding: 40px;
+}
+
+.pprivacidade p{
+    font-weight: normal; /* Remove o negrito do parágrafo */
+
+}
+
+.pprivacidade a{
+    color: #ed4848;
+}
+
+/* Pagina Aviso legal */
+
+.avisolegal{
+    margin-top: 60px;
+    padding: 40px;
+}
+
+.avisolegal p{
+    font-weight: normal; /* Remove o negrito do parágrafo */
+}
+
+
+/* Pagina Serviços */
+
+#imgservicos{
+    width: 600px;
+    height: 480px;
+}
+
+
+/* Botão Whatsapp */
+
+/* Estilos para o botão fixo do WhatsApp */
+#whatsappButton {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#whatsappButton img {
+    width: 40px;
+    height: 40px;
+}
+
+#whatsappButton:hover {
+    background-color: #128c7e; /* Cor do botão ao passar o mouse */
+}
+
+

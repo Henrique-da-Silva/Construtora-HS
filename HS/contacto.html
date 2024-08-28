@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construtora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-nav">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="ImagensProjeto/HS (1).svg" alt="Logo" class="img-fluid"> 
+            </a>
+
+            <div id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="somos.html">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="empreendimentos.html">Empreendimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container mt-5" id="contato">
+    <div class="row">
+          <!-- Dados de Contato -->
+          <div class="col-md-6" id="nc">
+            <h3>Nossos Contactos</h3>
+            <p>Não fique com dúvidas, fale conosco</p><br><br>
+            <div class="container">
+
+                <div class="row mb-4">
+                  <div class="col-md-2 d-flex align-items-center justify-content-center">
+                    <span class="material-symbols-outlined" id="iconmvv">
+                      move
+                      </span>
+                  </div>
+                  <div class="col-md-10">
+                    <h6>Morada</h6>
+                    <p id="mvv">Rua Exemplo, 123, Cidade, 2525-123</p>
+                  </div>
+                </div>
+            
+                <div class="row mb-4">
+                  <div class="col-md-2 d-flex align-items-center justify-content-center">
+                    <span class="material-symbols-outlined" id="iconmvv">
+                        alternate_email
+                      </span>
+                  </div>
+                  <div class="col-md-10">
+                    <h6>E-mail</h6>
+                    <p id="mvv">contrutorahs@exemplo.com</p>
+                  </div>
+                </div>
+            
+                <div class="row mb-4">
+                  <div class="col-md-2 d-flex align-items-center justify-content-center">
+                    <span class="material-symbols-outlined" id="iconmvv">
+                      phone_in_talk
+                      </span>
+                  </div>
+                  <div class="col-md-10">
+                    <h6>Telefone</h6>
+                    <p id="mvv">+351 123456789</p>
+                  </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-2 d-flex align-items-center justify-content-center">
+                      <span class="material-symbols-outlined" id="iconmvv">
+                        browse_gallery
+                        </span>
+                    </div>
+                    <div class="col-md-10">
+                      <h6>Horário</h6>
+                      <p id="mvv">Segunda à Sexta:
+                        8h às 18h</p>
+                        <p id="mvv">Sábado:
+                            8h às 12h
+                            </p>
+
+                    </div>
+                  </div>
+            
+              </div>
+           
+        </div>
+        <!-- Formulário de Contato -->
+        <div class="col-md-6" id="fc">
+            <h3>Contate a HS</h3>
+            <p>Estamos aqui para atender você! Juntos, transformamos seus sonhos em projetos concretos.</p>
+            <form id="contactForm">
+                <div id="titulocontato">
+                    <h5>Fale com a nossa equipe</h5>
+                    <p>Envie-nos uma mensagem para esclarecer suas dúvidas. Retornaremos o mais breve possível.</p>
+                </div>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                </div><br>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu email">
+                </div><br>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Seu telefone">
+                </div><br>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Sua mensagem"></textarea>
+                </div><br>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <div id="formMessage" class="mt-3"></div>
+        </div><br>
+
+      
+    </div>
+</div>
+
+<div class="localizacao">
+
+    <h3>Localização</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d771.5813706550815!2d-9.35773342965217!3d39.32621063144359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1f4885502938f7%3A0x7e5faac34a51313f!2sR.%20da%20Fonte%20a6%2C%202525-435%20Atouguia%20da%20Baleia!5e0!3m2!1spt-PT!2spt!4v1723121075044!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+</div>
+
+
+   <!--Inicio Footer-->
+   <footer class="text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5>Sobre Nós</h5><br>
+                <p>A HS desenvolve empreendimentos voltados ao público que está conquistando um sonho do
+                    primeiro imóvel próprio ou mesmo que busca fazer um ótimo investimento para sua vida e família.
+                </p>
+
+                <br>
+                <p>Nossa busca se traduz na entrega de um sonho para morar. Conheça a HS e os produtos, nas
+                  melhores localizações de Lisboa e litoral de Portugal.</p>
+                  <a href="politicadecookies.html" id="pcf">Política de Cookies</a> 
+                  <a href="politicadeprivacidade.html" id="pcf">Política de Privacidade</a> 
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5>Contacto</h5><br>
+                <ul class="list-unstyled">
+                    <span class="material-symbols-outlined">stacked_email</span>
+                    <li><a href="mailto:info@example.com" class="text-white">construtorahs@exemplo.com</a></li><br>
+                    <span class="material-symbols-outlined">phone_enabled</span>
+                    <li><a href="tel:+1234567890" class="text-white">+351 123 456 789</a></li><br>
+                    <span class="material-symbols-outlined">home_pin</span>
+                    <li>Endereço: Rua Exemplo, 123, Cidade, País</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Siga-nos</h5><br><br><br><br>
+                <ul class="list-unstyled d-flex">
+                    <li><a href="https://www.facebook.com/" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank" class="text-white me-3"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="bi bi-instagram"></i></a></li></a></li>
+                </ul>
+            </div>  
+        </div><br><br>
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p class="copy">&copy; 2024 Construtora HS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Botão Whatsapp -->
+
+<div id="whatsappButton" title="Fale conosco pelo WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" width="40" height="40">
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
